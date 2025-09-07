@@ -62,21 +62,20 @@ body{
 
 /* Daytime clouds drifting across the sky */
 .clouds{
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-2;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
   background-image: url('new_clouds.png');
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   opacity:0.55;
   animation: cloudsMove 90s linear infinite;
 }
 @keyframes cloudsMove{
   from{ background-position: 0 0; }
-  to{ background-position: -2000px 0; }
+  to{ background-position: -512px 0; }
 }
-
 .container{max-width:1100px;margin:0 auto;padding:28px}
 .header{
   display:flex; align-items:center; gap:14px; margin-bottom:18px;
